@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #343a40;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.meal-suggestion {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #ffffff;
+    opacity: 1;
+    animation: forwards;
+}
+
+@keyframes fade {
+    0%,100% { opacity: 0 }
+    50% { opacity: 1 }
+  }
+
+.meal-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #495057;
+}
+
+.meal-description {
+    font-size: 16px;
+    color: #6c757d;
+}

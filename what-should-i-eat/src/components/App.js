@@ -1,0 +1,23 @@
+import React, { useState } from "react";
+import MealSuggestion from "./MealSuggestion";
+import meals from "../data/meals";
+import "../styles/App.css";
+
+const App = () => {
+  const [meal, setMeal] = useState(null);
+
+  const getRandomMeal = () => {
+    const randomIndex = Math.floor(Math.random() * meals.length);
+    setMeal(meals[randomIndex]);
+  };
+
+  return (
+    <div className="app">
+      <h1>What Should I Eat for Dinner?</h1>
+      <button onClick={getRandomMeal}>Get Meal Suggestion</button>
+      {meal && <MealSuggestion meal={meal} />}
+    </div>
+  );
+};
+
+export default App;
